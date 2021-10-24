@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DashboardActivity">
+
+    <LinearLayout
+        android:background="@color/cardview_dark_background"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/avatar"/>
+        <TextView
+            android:id="@+id/tvName"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:text="Full Name"></TextView>
+
+
+        <TextView
+            android:id="@+id/tvEmail"
+            android:textColor="@color/cardview_light_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:text="Email Address"></TextView>
+
+        <TextView
+            android:id="@+id/tvPhone"
+            android:textColor="@color/design_default_color_background"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Phone Number"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@color/cardview_light_background"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/buttonCall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Call *123#"/>
+
+        <Button
+            android:id="@+id/buttonQuiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Quiz"/>
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:id="@+id/tvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="Hasil Quiz"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
