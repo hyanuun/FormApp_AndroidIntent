@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -38,6 +39,12 @@ public class DashboardActivity extends AppCompatActivity {
         buttonQuiz.setOnClickListener(v -> {
             Intent quizIntent = new Intent(DashboardActivity.this, QuizActivity.class);
             resultLauncher.launch(quizIntent);
+        });
+
+        Button buttonLang = (Button) findViewById(R.id.buttonLang);
+        buttonLang.setOnClickListener(v -> {
+            Intent IntentLang = new Intent(Settings.ACTION_LOCALE_SETTINGS);
+            startActivity(IntentLang);
         });
 
         TextView tvResult = (TextView) findViewById(R.id.tvResult);

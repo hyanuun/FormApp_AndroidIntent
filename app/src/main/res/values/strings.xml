@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">FormApp</string>
+
+    <string name="form_title">Fill the Registrastion Form below</string>
+    <string name="input_name_hint">Full Name</string>
+    <string name="input_email_hint">Email Address</string>
+    <string name="input_phone_hint">Phone Number</string>
+    <string name="input_password_hint">Password</string>
+    <string name="button_reg_save">Save</string>
+
 </resources>
